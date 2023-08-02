@@ -1,0 +1,4 @@
+# 浏览器状态
+headless: True
+
+base_url: "https://www.douyin.com/discover"

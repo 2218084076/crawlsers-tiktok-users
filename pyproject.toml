@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "crawlsers_tiktok_users"
+version = "0.1.0"
+description = "python script that crawls Tiktok user id"
+readme = "README.md"
+authors = ["Terry <17601306065@163.com>"]
+license = "MIT"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dynaconf = "^3.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
+isort = "^5.12.0"
+pytest = "^7.3.1"
+tox = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.pytest.ini_options]
+testpaths = "tests"
+python_files = "tests.py test_*.py *_tests.py"
+
+[tool.pylint.design]
+max-line-length = 120
